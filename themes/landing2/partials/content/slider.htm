@@ -1,0 +1,22 @@
+<div id="slider-{{ blockKey }}" class="content-block slider-block">
+    <h2>{{blockContent.hint}}</h2>
+    <div class="slider-block__slider">
+        {% for image in blockContent.images %}
+        <div class="slider-block__slide" style="background-image: url('{{ image.image|media }}');"></div>
+        {% endfor %}
+    </div>
+</div>
+
+{% put scripts %}
+<script>
+    $('#slider-{{ blockKey }} .slider-block__slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+    });
+</script>
+{% endput %}
+
+
+

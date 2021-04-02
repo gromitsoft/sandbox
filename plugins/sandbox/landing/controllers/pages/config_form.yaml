@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Page
+
+# Model Form Field configuration
+form: $/sandbox/landing/models/page/fields.yaml
+
+# Model Class name
+modelClass: Sandbox\Landing\Models\Page
+
+# Default redirect location
+defaultRedirect: sandbox/landing/pages
+
+# Create page
+create:
+    title: Create Page
+    redirect: sandbox/landing/pages/update/:id
+    redirectClose: sandbox/landing/pages
+
+# Update page
+update:
+    title: Edit Page
+    redirect: sandbox/landing/pages
+    redirectClose: sandbox/landing/pages
+
+# Preview page
+preview:
+    title: Preview Page

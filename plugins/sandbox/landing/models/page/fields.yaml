@@ -1,0 +1,13 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+        label: Landing title
+    content:
+        label: Landing content
+        type: repeater
+        style: collapsed
+        groups: $/sandbox/landing/models/page/groups.yaml
+

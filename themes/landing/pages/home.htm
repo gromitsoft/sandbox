@@ -1,0 +1,11 @@
+title = "Demonstration"
+url = "/"
+layout = "default"
+==
+
+<div class="container">
+    {% for blockKey, blockContent in landing.content %}
+    {% partial 'content/'~ blockContent._group blockContent = blockContent blockKey = blockKey %}
+    {% endfor %}
+</div>
+

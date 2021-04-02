@@ -1,0 +1,61 @@
+text:
+    name: Text block
+    description: Text block with richeditor
+    icon: icon-file-text-o
+    fields:
+        text:
+            label: Text block content
+            type: richeditor
+
+image:
+    name: Single image
+    description: Block with single image
+    icon: icon-image
+    fields:
+        image:
+            label: Image
+            type: mediafinder
+            mode: image
+            imageHeight: 150
+            imageWidth: 150
+            thumbOptions:
+                mode: crop
+                extension: auto
+
+features:
+    name: Features
+    description: Features simple block
+    icon: icon-star
+    fields:
+        title:
+            label: Feature title
+        features_items:
+            type: repeater
+            form:
+                fields:
+                    feature_title:
+                        label: Feature title
+                        span: left
+                    feature_description:
+                        label: Feature description
+                        span: right
+
+slider:
+    name: Slider
+    description: Block with slider images
+    icon: icon-play-circle-o
+    fields:
+        images:
+            label: Slides
+            type: repeater
+            form:
+                fields:
+                    image:
+                        label: Slide Image
+                        type: mediafinder
+                        mode: image
+                        imageHeight: 150
+                        imageWidth: 150
+                        thumbOptions:
+                            mode: crop
+                            extension: auto

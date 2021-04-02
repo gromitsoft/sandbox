@@ -1,0 +1,15 @@
+<div id="features-{{ blockKey }}" class="content-block features-block">
+    <h2>{{ blockContent.title }}</h2>
+    <div class="features-block__features">
+        {% for feature in blockContent.features_items %}
+        <div class="features-block__feature">
+            <div class="features-block__feature-title">
+                {{ feature.feature_title }}
+            </div>
+            <div class="features-block__feature-description">
+                {{ feature.feature_description }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
